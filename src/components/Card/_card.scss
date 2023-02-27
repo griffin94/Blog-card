@@ -10,6 +10,7 @@
     width: 100%;
     height: 273px;
     object-fit: cover;
+    object-position: calc(50% - 5px);
     border-radius: a.$rounding;
   }
 
@@ -25,6 +26,7 @@
 
     & &__image {
       height: 296px;
+      object-position: center;
     }
 
     & &__author {

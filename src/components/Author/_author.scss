@@ -1,0 +1,46 @@
+@use '../../styles/abstracts/' as a;
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  & &__image {
+    width: 36px;
+    height: 36px;
+  }
+
+  & &__name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  & &__time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: a.$gray-700;
+  }
+}
+
+@media (min-width: a.$tablet) {
+  .author {
+    & &__image {
+      width: 40px;
+      height: 40px;
+    }
+
+    & &__name,
+    & &__time {
+      font-size: 14px;
+    }
+  }
+}

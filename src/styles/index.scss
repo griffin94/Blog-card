@@ -1,11 +1,14 @@
 @use '../components';
 @use '../pages';
+@use './abstracts' as a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--color-primary);
-}
-
-p {
-  color: var(--color-on-surface);
+  background-color: a.$gray-400;
 }

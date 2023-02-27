@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Blog card</title>
   </head>
 
   <body>
-    <div id="home-page"></div>
+    <div id="home-page" class="home-page">
+      <div class="card">
+        <img
+          class="card__image"
+          src="./public/images/valentines-gift.png"
+          alt="breakfast in bed, croissants, tea, flowers"
+        />
+        <div class="author card__author">
+          <div class="author__info">
+            <img class="author__image" src="./public/images/person.png" alt="author" />
+            <span class="author__name">Kylee Thomson</span>
+          </div>
+          <span class="author__time">1h ago.</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

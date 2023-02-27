@@ -1,0 +1,33 @@
+@use '../../styles/abstracts' as a;
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & &__heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  & &__content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: a.$gray-700;
+  }
+}
+
+@media (min-width: a.$tablet) {
+  .article {
+    gap: 14px;
+    & &__heading {
+      font-size: 24px;
+    }
+
+    & &__content {
+      font-size: 16px;
+    }
+  }
+}

@@ -16,6 +16,11 @@
     font-size: 14px;
     line-height: 130%;
     color: a.$gray-700;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 

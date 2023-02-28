@@ -1,0 +1,31 @@
+@use '../../styles/abstracts' as a;
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  & &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  & &__image {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: a.$tablet) {
+  .footer {
+    & &__text {
+      font-size: 16px;
+    }
+
+    & &__image {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

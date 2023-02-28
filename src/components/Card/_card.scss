@@ -17,6 +17,10 @@
   & &__author {
     margin: 24px 0;
   }
+
+  & &__footer {
+    margin-top: 24px;
+  }
 }
 
 @media (min-width: a.$tablet) {
@@ -31,6 +35,10 @@
 
     & &__author {
       margin: 32px 0;
+    }
+
+    & &__footer {
+      margin-top: 32px;
     }
   }
 }
